@@ -1,7 +1,7 @@
 from algorithms.Processor import show
 from algorithms.greedy_algorithm import greedy_algorithm
 from algorithms.tabu_search import tabu_search
-from instances.instance_generator import make_instance_optimum
+from instances.instance_generator import make_optimum_instance, make_random_instance
 
 # test_file = 'instances/m25.txt'
 # iterations = 35000
@@ -23,7 +23,12 @@ from instances.instance_generator import make_instance_optimum
 # iterations = 20000
 # tabu_length = 1
 
-print('Optimum result: ' + str(make_instance_optimum(400, 100, 1000)))  # task_amount, processors_amount, max_task_time
+# make_random_instance(400, 100, 1000)  # task_amount, processors_amount, max_task_time
+# test_file = 'instances/random_instance.txt'
+# iterations = 70000
+# tabu_length = 5
+
+print('Optimum result: ' + str(make_optimum_instance(400, 100, 1000)))  # task_amount, processors_amount, max_task_time
 test_file = 'instances/optimum_instance.txt'
 iterations = 70000
 tabu_length = 5

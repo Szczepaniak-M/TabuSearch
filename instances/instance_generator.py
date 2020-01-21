@@ -14,7 +14,7 @@ def make_random_instance(task_amount=0, processors_amount=0, max_task_time=50):
             file.write(str(random.randint(5, max_task_time)) + '\n')
 
 
-def make_instance_optimum(task_amount, processors_amount, max_task_time, file_name="instances/optimum_instance.txt"):
+def make_optimum_instance(task_amount, processors_amount, max_task_time, file_name="instances/optimum_instance.txt"):
     tasks = []
     times = []
     for i in range(processors_amount):
